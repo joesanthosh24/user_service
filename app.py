@@ -45,7 +45,7 @@ def update_user(id):
         if data.get('name'):
             name = data.get('name')
 
-        users[id] = { email: email, name: name }
+        users[id] = { 'email': email, 'name': name }
 
         return jsonify({
             'updated_user': users[id],
